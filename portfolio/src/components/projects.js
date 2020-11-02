@@ -1,23 +1,28 @@
 import React from "react";
 import Data from "../data/projects";
 
+
+
 function Projects() {
   return (
-    <div>
-      <h1>Projects</h1>
+    <div className="Project-wrapper">
+      <div className="project-box">
+        <h1>Projects</h1>
 
-      {Data.map((project) => (
-        <div className="project-card">
-          <h2 className="project-name">{project.name}</h2>
-          <div className="tech-box">
-            {project.tech.map((tech) => (
-              <div>{tech}</div>
-            ))}
+        {Data.map((project) => (
+          <div className="project-card">
+            <h2 className="project-name">{project.name}</h2>
+            <div className="tech-container">
+              {project.tech.map((tech) => (
+                <div className="tech-box">{tech}</div>
+              ))}
+            </div>
+
+            <div><video loop playsInline autoPlay muted width="100%" ><source src={project.img} type="video/mp4"/></video></div>
+            <p>{project.about}</p>
           </div>
-          <div>{project.img}</div>
-          <p>{project.about}</p>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,38 +1,306 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .App {
   text-align: center;
+  color: #010076;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1,
+.App h2,
+.App h3,
+.App h4,
+.App h5,
+.App h6 {
+  font-family: "Spartan", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App p {
+  font-family: "Nurito", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App h1 {
+  font-size: 3rem;
+  margin: 20px 0%;
+}
+
+.App h2 {
+  font-size: 2rem;
+  margin: 20px 0%;
+}
+
+.App .Header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 60vh;
+  text-align: left;
+  background: linear-gradient(138deg, #000034 7%, #010076 74%);
+  -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% calc(100% - 2rem), 0px 100%);
+          clip-path: polygon(0px 0px, 100% 0px, 100% calc(100% - 2rem), 0px 100%);
 }
 
-.App-link {
-  color: #61dafb;
+.App .Header-wrapper #name,
+.App .Header-wrapper #subtitle {
+  color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.App .Header-wrapper #title {
+  color: #6a8d92;
+}
+
+.App .Header-wrapper .header-box {
+  width: 80vw;
+  max-width: 600px;
+}
+
+.App .About-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px auto 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: left;
+}
+
+.App .About-wrapper h1 {
+  color: #010076;
+}
+
+.App .About-wrapper .about-box {
+  width: 80vw;
+  max-width: 600px;
+}
+
+.App .Project-wrapper {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5%;
+  background-color: whitesmoke;
+  -webkit-clip-path: polygon(0px 0px, 100% 2rem, 100% calc(100% - 2rem), 0px 100%);
+          clip-path: polygon(0px 0px, 100% 2rem, 100% calc(100% - 2rem), 0px 100%);
+}
+
+.App .Project-wrapper .project-box {
+  width: 80vw;
+  max-width: 600px;
+}
+
+.App .Project-wrapper .project-card {
+  margin-bottom: 20%;
+  text-align: left;
+  width: 80vw;
+  max-width: 600px;
+}
+
+.App .Project-wrapper .project-card .tech-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.App .Project-wrapper .project-card .tech-container .tech-box {
+  margin-right: 20px;
+}
+
+.App .Footer-wrapper {
+  height: 30vh;
+  margin: 40px auto 0px;
+}
+
+.App .Footer-wrapper .footer-box {
+  width: 80vw;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.App .Footer-wrapper .footer-box .contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+  .App p {
+    font-size: 2.5vw;
   }
 }
+/*# sourceMappingURL=App.css.map */

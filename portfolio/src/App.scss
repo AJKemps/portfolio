@@ -1,0 +1,138 @@
+@import "./styles/_resest";
+$offBlack: rgba(0, 0, 52, 1);
+$blue: rgba(1, 0, 118, 1);
+$mainColor: $offBlack;
+$width: 80vw;
+$maxWidth: 600px;
+$bg: linear-gradient(138deg, rgba(0, 0, 52, 1) 7%, rgba(1, 0, 118, 1) 74%);
+$fontSize: 1rem;
+
+.App {
+  text-align: center;
+  color: $blue;
+  background-color: white;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Spartan", sans-serif;
+  }
+
+  p {
+    font-family: "Nurito", sans-serif;
+    font-size: $fontSize;
+    line-height: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 20px 0%;
+  }
+  h2 {
+    font-size: 2rem;
+    margin: 20px 0%;
+  }
+
+  .Header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 60vh;
+    text-align: left;
+    background: $bg;
+    clip-path: polygon(0px 0px, 100% 0px, 100% calc(100% - 2rem), 0px 100%);
+
+    #name,
+    #subtitle {
+      color: whitesmoke;
+    }
+
+    #title {
+      color: #6a8d92;
+    }
+
+    .header-box {
+      width: $width;
+      max-width: $maxWidth;
+    }
+  }
+
+  .About-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto 40px;
+    justify-content: space-around;
+    text-align: left;
+
+    h1 {
+      color: $blue;
+    }
+
+    .about-box {
+      width: $width;
+      max-width: $maxWidth;
+    }
+  }
+
+  .Project-wrapper {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    background-color: whitesmoke;
+    clip-path: polygon(0px 0px, 100% 2rem, 100% calc(100% - 2rem), 0px 100%);
+
+    .project-box {
+      width: $width;
+      max-width: $maxWidth;
+    }
+
+    .project-card {
+      margin-bottom: 20%;
+      text-align: left;
+      width: $width;
+      max-width: $maxWidth;
+
+      .tech-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        .tech-box {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .Footer-wrapper {
+    height: 30vh;
+    margin: 40px auto 0px;
+
+    .footer-box {
+      width: $width;
+      max-width: $maxWidth;
+      margin: auto;
+      text-align: left;
+
+      .contact-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    p {
+      font-size: 2.5vw;
+    }
+  }
+}
