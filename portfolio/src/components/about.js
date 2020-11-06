@@ -1,31 +1,38 @@
 import React from "react";
+// import pic from "../data/alexHeadshot.png";
 
 function About() {
   return (
     <div className="About-wrapper">
       <div className="about-box">
         <h1>Hello!</h1>
+        {/* <img src={pic} alt="avatar" id="pic" /> */}
         <p>
-          I am a software developer specializing in full-stack web applications.
-          <br />
-          My go-to tools are React, Node, Express, and Python. <br />
-          <br />
-          I'm passionate about continually learning and exploring new ways to
-          solve problems, big and small
+          My name is Alex. I am a full stack web developer with an interest in
+          new product and market development.
           <br />
           <br />
-          My seven years of experience in sales and partnership management
-          roles, analytical nature, and passion for problem solving make me a
-          great fit for a team looking to build products that delight customers
-          and partners alike.
+          I've spent most of this past year studying full stack web development
+          at{" "}
+          <a
+            target="blank"
+            href="https://lambdaschool.com/courses/full-stack-web-development"
+          >
+            Lambda School
+          </a>
+          , an immersive 6-month coding bootcamp, where I've learned frontend
+          development, complex state management, API development, backend
+          development, and computer science.
           <br />
           <br />
-          I am open to full-time, remote dev positions at startups backed by
-          top-tier investors.
-          <br />
-          <br />
-          Send me an email, find me on Twitter, or check out my code on Github.
-          <br />
+          Prior to becoming a web developer, I rose through the ranks as a sales
+          and partnerships manager at{" "}
+          <a href="https://www.guideline.com" target="blank">
+            Guideline
+          </a>
+          , a top-tier fintech startup based in the Bay Area. It was at
+          Guideline that I got my first taste of software development, and
+          ultimately decided to dive in headfirst.
           <br />
         </p>
       </div>
