@@ -46,8 +46,10 @@ function Projects() {
               </div>
             </div>
           </div>
-        ))}
-      </div>
+          <div>{project.img}</div>
+          <p>{project.about}</p>
+        </div>
+      ))}
     </div>
   );
 }
