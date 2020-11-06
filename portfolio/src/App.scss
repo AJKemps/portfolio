@@ -67,7 +67,7 @@ $grad1: linear-gradient(
   h1 {
     font-size: 4rem;
     margin: 20px 0%;
-    color: $titleColor;
+    color: whitesmoke;
     // text-shadow: 0px 0px 15px rgba(117, 117, 117, 0.5);
   }
 
@@ -111,6 +111,7 @@ $grad1: linear-gradient(
       p {
         font-size: 1.5rem;
         margin-left: 5px;
+        color: whitesmoke;
       }
     }
   }
@@ -122,6 +123,10 @@ $grad1: linear-gradient(
     margin: 40px auto 40px;
     justify-content: space-around;
     text-align: left;
+
+    h1 {
+      color: $titleColor;
+    }
 
     a {
       font-weight: bold;
@@ -159,6 +164,10 @@ $grad1: linear-gradient(
 
     .project-title {
       margin-top: 50px;
+
+      h1 {
+        color: $titleColor;
+      }
     }
 
     .project-box {

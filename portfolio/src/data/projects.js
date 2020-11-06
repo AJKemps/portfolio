@@ -1,6 +1,6 @@
 import songestions from "../videos/SongestionsDemo_comp.mov";
 import GOL from "../videos/GOLDemo_comp.mov";
-import rekit from "../videos/ReKitDemo_comp.mov";
+import rekit from "../videos/RekitDemo_comp.mov";
 import server from "../videos/ServerDemo_comp.mov";
 
 const Data = [
