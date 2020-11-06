@@ -1,7 +1,7 @@
-import songestions from "../videos/SongestionsDemo.mp4";
-import GOL from "../videos/GOLDemo.mp4";
-import rekit from "../videos/RekitDemo.mp4";
-import server from "../videos/ServerDemo.mp4";
+import songestions from "../videos/SongestionsDemo_comp.mov";
+import GOL from "../videos/GOLDemo_comp.mov";
+import rekit from "../videos/ReKitDemo_comp.mov";
+import server from "../videos/ServerDemo_comp.mov";
 
 const Data = [
   {

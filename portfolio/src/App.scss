@@ -20,6 +20,15 @@ $gradient: linear-gradient(
   rgba(67, 97, 238, 1) 80%,
   rgba(72, 149, 239, 1) 90%
 );
+$grad1: linear-gradient(
+  -45deg,
+  #845ec2,
+  #d65db1,
+  #ff6f91,
+  #ff9671,
+  #ffc75f,
+  #f9f871
+);
 
 @keyframes bg-animation {
   0% {
@@ -83,7 +92,7 @@ $gradient: linear-gradient(
     // background: $bg;
     background-image: $gradient;
     background-size: 400%;
-    animation: bg-animation 20s infinite alternate;
+    animation: bg-animation 30s infinite alternate;
     clip-path: polygon(0px 0px, 100% 0px, 100% calc(100% - 2rem), 0px 100%);
 
     #name,
