@@ -34,6 +34,7 @@ function Projects() {
                 <li className="bullet">— {item}</li>
               ))}
             </ul>
+            <br/><br/>
             <div className="link-box">
               <div className="link">
                 <a target="blank" href={project.github}>
