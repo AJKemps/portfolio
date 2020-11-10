@@ -32,7 +32,7 @@ function About() {
           </a>
           , a top-tier fintech startup based in the Bay Area. It was at
           Guideline that I got my first taste of software development, and
-          ultimately decided to dive in headfirst.
+          ultimately decided to pursue it as a career.
           <br />
         </p>
       </div>

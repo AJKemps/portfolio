@@ -8,9 +8,9 @@ function Projects() {
         <div className="project-title">
           <h1>Portfolio</h1>
           <p className="project-intro">
-            I enjoy working on challenging problems, finding the right solution,
-            and accentuating it with good design. If I get to learn a new tool
-            or technology along the way, even better.
+            I enjoy working on challenging problems, finding the proper
+            solution, and accentuating that solution with good design. If I get
+            to learn a new tool or technology along the way, even better.
           </p>
         </div>
         {Data.map((project) => (
