@@ -29,6 +29,7 @@ function Projects() {
             </div>
             <ul>
               {project.about}
+              <br/><br/>
               {project.bullets.map((item) => (
                 <li className="bullet">— {item}</li>
               ))}
