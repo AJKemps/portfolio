@@ -28,8 +28,7 @@ function Projects() {
               </video>
             </div>
             <ul>
-              {project.about}
-              <br/><br/>
+              <p>{project.about}</p>
               {project.bullets.map((item) => (
                 <li className="bullet">— {item}</li>
               ))}

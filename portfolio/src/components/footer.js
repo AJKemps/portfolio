@@ -50,6 +50,7 @@ function Footer() {
               <p>LinkedIn</p>
             </a>
           </div>
+
         </div>
       </div>
     </div>

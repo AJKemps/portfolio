@@ -22,7 +22,7 @@ function About() {
           </a>
           , an immersive 6-month coding bootcamp, where I've learned frontend
           development, complex state management, API development, backend
-          development, and computer science.
+          development, and computer science, among other topics.
           <br />
           <br />
           Prior to becoming a web developer, I rose through the ranks as a sales
@@ -30,8 +30,7 @@ function About() {
           <a href="https://www.guideline.com" target="blank">
             Guideline
           </a>
-          , a top-tier fintech startup based in the Bay Area. It was at
-          Guideline that I got my first taste of software development, and
+          , a top-tier fintech startup based in the Bay Area, where I got my first taste of software development and
           ultimately decided to pursue it as a career.
           <br />
         </p>
