@@ -27,9 +27,9 @@ const Data = [
     deployed: 'https://songestions.herokuapp.com/',
     github: 'https://github.com/BW-Spotify-Song-Suggester-3/front-end',
     bullets: [
+      'Complex state management via Redux',
       'Recommendations powered by ML model',
       'Integration with Spotify API',
-      'Recommendations based on mood',
     ],
   },
   {
