@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className="Header-wrapper">
       <div className="header-box">
-        <h1>
+        <h1 id="name">
           Alex <br /> Kemper
         </h1>
         <h1>Software Developer</h1>
