@@ -1,4 +1,4 @@
-@import "./styles/_resest";
+@import './styles/_resest';
 $purple: #7400b8;
 $blue: #5390d9;
 $mainColor: $purple;
@@ -10,15 +10,9 @@ $textColor: #0b2540;
 $titleColor: #023e8a;
 $gradient: linear-gradient(
   138deg,
-  rgba(247, 37, 133, 1) 10%,
-  rgba(181, 23, 158, 1) 20%,
-  rgba(114, 9, 183, 1) 30%,
-  rgba(86, 11, 173, 1) 40%,
-  rgba(72, 12, 168, 1) 50%,
-  rgba(58, 12, 163, 1) 60%,
-  rgba(63, 55, 201, 1) 70%,
-  rgba(67, 97, 238, 1) 80%,
-  rgba(72, 149, 239, 1) 90%
+  rgba(63, 55, 201, 1) 10%,
+  rgba(67, 97, 238, 1) 40%,
+  #4895ef 80%
 );
 $grad1: linear-gradient(
   -45deg,
@@ -50,13 +44,15 @@ $grad1: linear-gradient(
   h4,
   h5,
   h6 {
-    font-family: "Spartan", sans-serif;
+    font-family: cooper-black-std, serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   p,
   ul,
   li {
-    font-family: "Nunito", sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: $fontSize;
     line-height: 1.5rem;
     color: $textColor;
@@ -100,12 +96,12 @@ $grad1: linear-gradient(
     text-align: left;
     // background: $bg;
     background-image: $gradient;
-    background-size: 400%;
-    animation: bg-animation 30s infinite alternate;
+    background-size: 300%;
+    animation: bg-animation 15s infinite alternate;
     clip-path: polygon(0px 0px, 100% 0px, 100% calc(100% - 2rem), 0px 100%);
 
     @media (min-width: 1100px) {
-      background-size: 600%;
+      background-size: 300%;
     }
 
     // @media (max-width: 1100px) {
@@ -124,10 +120,19 @@ $grad1: linear-gradient(
     .header-box {
       width: $width;
       max-width: $maxWidth;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      h1 {
+        text-shadow: 3px 3px 0px #033f8a;
+        margin: 10px 0px;
+      }
 
       p {
         font-size: 1.5rem;
-        margin-left: 5px;
+        font-weight: bolder;
+        margin: 10px 0px;
         color: whitesmoke;
       }
     }
@@ -167,6 +172,20 @@ $grad1: linear-gradient(
     .about-box {
       width: $width;
       max-width: $maxWidth;
+    }
+
+    #sig-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      img {
+        width: 100px;
+        border: none;
+        font-size: 1.4rem;
+
+        // border-radius: 5%;
+      }
     }
   }
 
@@ -270,7 +289,7 @@ $grad1: linear-gradient(
           // border-color: silver;
           background-color: #f8f9fa;
           color: #a2a9b0;
-          font-family: "Nunito", sans-serif;
+          font-family: 'Nunito', sans-serif;
           text-transform: uppercase;
           font-size: 0.7rem;
           font-weight: 600;
@@ -303,7 +322,7 @@ $grad1: linear-gradient(
           border-color: silver;
           background-color: rbga(0, 0, 0, 0.1);
           color: $purple;
-          font-family: "Nunito", sans-serif;
+          font-family: 'Nunito', sans-serif;
           text-transform: capitalize;
         }
       }
@@ -330,7 +349,7 @@ $grad1: linear-gradient(
         margin-bottom: 15%;
 
         a {
-          font-family: "Nunito", sans-serif;
+          font-family: 'Nunito', sans-serif;
           font-weight: bold;
           text-decoration: none;
           // border-bottom: 4px solid $blue;

@@ -1,9 +1,9 @@
-import "./App.scss";
-import Header from "./components/header";
-import About from "./components/about";
-import Projects from "./components/projects";
-import Footer from "./components/footer";
-import HttpsRedirect from "react-https-redirect";
+import './App.scss';
+import Header from './components/header';
+import About from './components/about';
+import Projects from './components/projects';
+import Footer from './components/footer';
+import HttpsRedirect from 'react-https-redirect';
 
 function App() {
   return (

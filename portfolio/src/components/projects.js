@@ -1,5 +1,5 @@
-import React from "react";
-import Data from "../data/projects";
+import React from 'react';
+import Data from '../data/projects';
 
 function Projects() {
   return (
@@ -11,10 +11,14 @@ function Projects() {
             I enjoy working on challenging problems, finding the proper
             solution, and accentuating that solution with good design. If I get
             to learn a new tool or technology along the way, even better.
+            <br />
+            <br />
+            I'm always interested in working on cool new side projects, and
+            would love to hear from you if you think I can be helpful.
           </p>
         </div>
-        {Data.map((project) => (
-          <div className="project-card">
+        {Data.map((project, i) => (
+          <div className="project-card" key={i}>
             <h2 className="project-name">{project.name}</h2>
             <div className="tech-container">
               {project.tech.map((tech) => (
@@ -33,7 +37,8 @@ function Projects() {
                 <li className="bullet">— {item}</li>
               ))}
             </ul>
-            <br/><br/>
+            <br />
+            <br />
             <div className="link-box">
               <div className="link">
                 <a target="blank" href={project.github}>

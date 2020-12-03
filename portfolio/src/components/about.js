@@ -1,5 +1,4 @@
-import React from "react";
-// import pic from "../data/alexHeadshot.png";
+import React from 'react';
 
 function About() {
   return (
@@ -8,12 +7,12 @@ function About() {
         <h1>Hello!</h1>
         {/* <img src={pic} alt="avatar" id="pic" /> */}
         <p>
-          My name is Alex. I am a full stack web developer with an interest in
-          new product and market development.
+          My name is Alex, and I am a full stack web developer with an interest
+          in new product and market development.
           <br />
           <br />
           I've spent most of this past year studying full stack web development
-          at{" "}
+          at{' '}
           <a
             target="blank"
             href="https://lambdaschool.com/courses/full-stack-web-development"
@@ -26,14 +25,33 @@ function About() {
           <br />
           <br />
           Prior to becoming a web developer, I rose through the ranks as a sales
-          and partnerships manager at{" "}
+          and partnerships manager at{' '}
           <a href="https://www.guideline.com" target="blank">
             Guideline
-          </a>
-          , a top-tier fintech startup based in the Bay Area, where I got my first taste of software development and
+          </a>{' '}
+          (Forbes Fintech 50) , a top-tier fintech startup based in the Bay
+          Area, where I got my first taste of software development and
           ultimately decided to pursue it as a career.
           <br />
+          <br />
+          Being a recent bootcamp grad, and having previously led sales and
+          partnership efforts at a high-growth startup, I bring a unique
+          combination of skills to the table. I'm looking for a full-stack dev
+          position at a company that believes this skillset can be uniquely
+          valuable to their team.
+          <br />
+          <br />
+          If that sounds like you, feel free to drop me a note. Always happy to
+          chat.
+          <br />
+          <br />
+          Thanks for stopping by!
+          <br />
+          <br />
         </p>
+        <div id="sig-box">
+          <p>- Alex</p>
+        </div>
       </div>
     </div>
   );
