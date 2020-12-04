@@ -8,6 +8,7 @@ $bg: linear-gradient(138deg, $purple 7%, $blue 74%);
 $fontSize: 1.1rem;
 $textColor: #0b2540;
 $titleColor: #023e8a;
+$accentColor: #4895ef;
 $gradient: linear-gradient(
   138deg,
   rgba(63, 55, 201, 1) 10%,
@@ -125,7 +126,7 @@ $grad1: linear-gradient(
       justify-content: space-around;
 
       h1 {
-        text-shadow: 3px 3px 0px #033f8a;
+        text-shadow: 2px 2px 5px #033f8a;
         margin: 10px 0px;
       }
 
@@ -134,6 +135,7 @@ $grad1: linear-gradient(
         font-weight: bolder;
         margin: 10px 0px;
         color: whitesmoke;
+        text-shadow: 1px 1px 5px #033f8a;
       }
     }
   }
@@ -149,6 +151,7 @@ $grad1: linear-gradient(
 
     h1 {
       color: $titleColor;
+      text-shadow: 2px 2px 0px $accentColor;
     }
 
     a {
@@ -204,6 +207,7 @@ $grad1: linear-gradient(
 
       h1 {
         color: $titleColor;
+        text-shadow: 2px 2px 0px $accentColor;
       }
     }
 
@@ -238,6 +242,8 @@ $grad1: linear-gradient(
 
       h2 {
         color: #023e8a;
+        text-shadow: 1.5px 1.5px 0px $accentColor;
+
         margin: 5% 0%;
       }
 
@@ -293,6 +299,7 @@ $grad1: linear-gradient(
           text-transform: uppercase;
           font-size: 0.7rem;
           font-weight: 600;
+          box-shadow: 0.5px 0.5px 2px 0px rgba(117, 117, 117, 0.5);
         }
 
         @media (max-width: 450px) {
