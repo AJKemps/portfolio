@@ -39,6 +39,7 @@ function Header() {
         <motion.h1 id="name" variants={listItem}>
           Alex <br /> Kemper
         </motion.h1>
+
         <motion.h1 variants={listItem}>Software Developer</motion.h1>
         <motion.p variants={listItem}>Full Stack Web Apps</motion.p>
       </motion.div>

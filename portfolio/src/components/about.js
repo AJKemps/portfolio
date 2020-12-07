@@ -41,8 +41,9 @@ function About() {
           valuable to their team.
           <br />
           <br />
-          If that sounds like you, feel free to drop me a note. Always happy to
-          chat.
+          If that sounds like you, feel free to{' '}
+          <a href="mailto:alex.j.kemper@gmail.com"> drop me a note </a>. Always
+          happy to chat.
           <br />
           <br />
           Thanks for stopping by!
@@ -50,7 +51,8 @@ function About() {
           <br />
         </p>
         <div id="sig-box">
-          <p>- Alex</p>
+          {/* <p>- Alex Kemper</p> */}
+          <div id="pic-div" />
         </div>
       </div>
     </div>

@@ -179,15 +179,26 @@ $grad1: linear-gradient(
 
     #sig-box {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: flex-start;
+      align-items: center;
+      width: 100%;
 
-      img {
-        width: 100px;
-        border: none;
-        font-size: 1.4rem;
+      #pic-div {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px 3px rgba(117, 117, 117, 0.5);
+        background-image: url(./data/alexHeadshot.png);
+        background-size: 230px;
+        background-position: -20px;
+        margin: 5% 5% 0%;
+      }
 
-        // border-radius: 5%;
+      @media (max-width: 600px) {
+        #pic-div {
+          margin: 15% 5% 0%;
+        }
       }
     }
   }
