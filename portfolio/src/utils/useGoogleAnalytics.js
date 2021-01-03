@@ -5,6 +5,7 @@ const useGoogleAnalytics = () => {
   useEffect(() => {
     ReactGA.initialize('G-D69SQJM7RZ');
     ReactGA.pageview(window.location.pathname + window.location.search);
+    console.log('GA');
   });
 };
 

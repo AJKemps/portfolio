@@ -18,7 +18,7 @@ function Projects() {
           </p>
         </div>
         {Data.map((project, i) => (
-          <div className="project-card" key={i}>
+          <div className="project-card" key={project.name}>
             <h2 className="project-name">{project.name}</h2>
             <div className="tech-container">
               {project.tech.map((tech) => (
@@ -34,7 +34,9 @@ function Projects() {
             <ul>
               <p>{project.about}</p>
               {project.bullets.map((item) => (
-                <li className="bullet">— {item}</li>
+                <li className="bullet" key={item}>
+                  — {item}
+                </li>
               ))}
             </ul>
             <br />

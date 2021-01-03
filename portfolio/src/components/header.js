@@ -1,5 +1,5 @@
 import React from 'react';
-import useGoogleAnalytics from '../utils/useGoogleAnalytics';
+// import useGoogleAnalytics from '../utils/useGoogleAnalytics';
 import { motion } from 'framer-motion';
 
 const container = {
@@ -26,7 +26,7 @@ const listItem = {
 };
 
 function Header() {
-  useGoogleAnalytics();
+  // useGoogleAnalytics();
 
   return (
     <div className="Header-wrapper">
