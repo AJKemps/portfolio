@@ -18,9 +18,12 @@ function About() {
           scrollTrigger: {
             id: `section-${i + 1}`,
             trigger: el,
-            start: 'top 400',
+            start: 'top 80%',
             toggleActions: 'play none none none',
-            markers: true,
+            // markers: true,
+          },
+          stagger: {
+            each: 0.7,
           },
         }
       );
@@ -37,9 +40,11 @@ function About() {
   return (
     <div className="About-wrapper">
       <div className="about-box">
-        <h1 ref={addToRefs}>Hello!</h1>
+        <h1 className="ani" ref={addToRefs}>
+          Hello!
+        </h1>
         {/* <img src={pic} alt="avatar" id="pic" /> */}
-        <div ref={addToRefs}>
+        <div className="ani" ref={addToRefs}>
           <p>
             My name is Alex, and I am a full stack web developer with an
             interest in new product and market development.
