@@ -6,6 +6,7 @@ import ss from '../videos/StorySquad.mov';
 
 const Data = [
   {
+    key: 4,
     name: 'Story Squad',
     tech: ['react', 'recoil', 'Node', 'AWS S3', 'Multer', 'Okta'],
     img: ss,
@@ -20,6 +21,7 @@ const Data = [
     ],
   },
   {
+    key: 3,
     name: 'Songestions',
     tech: ['react', 'redux', 'node', 'APIs', 'react router'],
     img: songestions,
@@ -33,6 +35,7 @@ const Data = [
     ],
   },
   {
+    key: 2,
     name: 'ReKit',
     tech: ['react', 'mustache', 'next', 'UI/UX'],
     img: rekit,
@@ -47,6 +50,7 @@ const Data = [
     ],
   },
   {
+    key: 1,
     name: 'Songestions Backend',
     tech: ['express', 'node', 'APIs', 'PostgreSQL', 'Testing'],
     img: server,
@@ -60,6 +64,7 @@ const Data = [
     ],
   },
   {
+    key: 0,
     name: "Conway's Game of Life",
     tech: ['react', 'Algorithms', 'Computer Science'],
     img: GOL,

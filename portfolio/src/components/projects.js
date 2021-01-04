@@ -1,7 +1,42 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Data from '../data/projects';
 
+gsap.registerPlugin(ScrollTrigger);
+
 function Projects() {
+  const revealsRef = useRef([]);
+  revealsRef.current = [];
+
+  // useEffect(() => {
+  //   revealsRef.current.forEach((el, i) => {
+  //     gsap.fromTo(
+  //       el,
+  //       { y: 0 },
+  //       {
+  //         duration: 0.25,
+  //         y: 0,
+
+  //         ease: 'power1',
+  //         scrollTrigger: {
+  //           id: `section-${i + 1}`,
+  //           trigger: el,
+  //           // start: 'top',
+  //           toggleActions: 'play none none none',
+  //         },
+  //       }
+  //     );
+  //   });
+  // });
+
+  const addToRefs = (el) => {
+    if (el && !revealsRef.current.includes(el)) {
+      revealsRef.current.push(el);
+    }
+    console.log(revealsRef.current);
+  };
+
   return (
     <div className="Project-wrapper">
       <div className="project-box">
@@ -18,7 +53,7 @@ function Projects() {
           </p>
         </div>
         {Data.map((project, i) => (
-          <div className="project-card" key={project.name}>
+          <div className="project-card" key={project.key} ref={addToRefs}>
             <h2 className="project-name">{project.name}</h2>
             <div className="tech-container">
               {project.tech.map((tech) => (
